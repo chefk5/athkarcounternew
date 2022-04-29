@@ -1,0 +1,60 @@
+{
+  "scripts": {
+    "start": "react-native start",
+    "test": "jest",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "np": "np --no-publish",
+    "postversion": "react-native-version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chefk5/athkarCounter"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg)"
+    ]
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/native": "^5.9.3",
+    "appcenter": "4.1.0",
+    "appcenter-analytics": "4.1.0",
+    "appcenter-crashes": "4.1.0",
+    "core.js": "^0.4.2",
+    "expo": "^41.0.0",
+    "expo-splash-screen": "~0.10.2",
+    "expo-status-bar": "~1.0.4",
+    "expo-updates": "~0.5.4",
+    "jest-expo": "41.0.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "~0.63.4",
+    "react-native-gesture-handler": "~1.10.2",
+    "react-native-reanimated": "~2.1.0",
+    "react-native-safe-area-context": "3.2.0",
+    "react-native-screens": "~3.0.0",
+    "react-native-unimodules": "~0.13.3",
+    "react-native-vector-icons": "^8.1.0",
+    "react-native-web": "~0.13.12",
+    "react-redux": "^7.2.3",
+    "react-test-renderer": "^16.13.0",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "~7.9.0",
+    "jest": "^26.6.3",
+    "np": "^7.6.1",
+    "react-native-version": "^4.0.0",
+    "react-native-versioner": "^1.0.1"
+  },
+  "private": true,
+  "name": "athkarCounter",
+  "version": "0.0.7"
+}

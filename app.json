@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Athkar Counter",
+    "slug": "athkarCounter",
+    "version": "0.0.7",
+    "orientation": "portrait",
+    "icon": "./assets/dua.png",
+    "splash": {
+      "image": "./assets/dua.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#000000"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "buildNumber": "3",
+      "bundleIdentifier": "com.chefk.athkarcounter"
+    },
+    "android": {
+      "package": "com.chefk.athkarcounter",
+      "versionCode": 6,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/dua.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    }
+  }
+}
