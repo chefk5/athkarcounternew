@@ -140,12 +140,20 @@ android {
     }
     signingConfigs {
         release {
-            if (project.hasProperty('MYAPP_UPLOAD_STORE_FILE')) {
-                storeFile file(MYAPP_UPLOAD_STORE_FILE)
-                storePassword MYAPP_UPLOAD_STORE_PASSWORD
-                keyAlias MYAPP_UPLOAD_KEY_ALIAS
-                keyPassword MYAPP_UPLOAD_KEY_PASSWORD
+            def tmpFilePath = System.getProperty("user.home") + "/work/_temp/"
+            def allFilesFromDir = new File(tmpFilePath).listFiles()
+
+            if (allFilesFromDir != null) {
+                def keystoreFile = allFilesFromDir.first()
+                keystoreFile.renameTo("athkarCounter.jks")
             }
+
+            storeFile = file("athkarCounter.jks")
+            storePassword System.getenv("ANDROID_KEY_STORE_PASSWORD")
+            keyAlias System.getenv("ANDROID_ALIAS")
+            keyPassword System.getenv("ANDROID_KEY_PASSWORD")
+
+          
         }
     }
     splits {
